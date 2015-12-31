@@ -1,2 +1,3 @@
-# codebi-site
-Source for Code BI Website
+# Code BI Website
+
+See the site at http://www.codebi.co.uk.
