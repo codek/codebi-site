@@ -162,7 +162,7 @@
                         <!--<img src="img/portfolio/game.png" class="img-responsive" alt="">-->
                     </a>
                 </div>
-                <div class="col-sm-6 portfolio-item">
+                <div class="col-sm-12 portfolio-item">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -364,7 +364,16 @@
                             <h2>Ingestion Engine</h2>
                             <hr class="star-primary">
                             <!--<img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">-->
-                            <p>x</p>
+                            <p>A large investment bank wanted an automated way to populate their data lake.  The task was simply to:</p>
+                            <ul class="item-details text-left">
+                                <li>Read the metadata from JDBC databases, Excel, Lotus Notes and a myriad of flat files</li>
+                                <li>Present this to data owners so they can choose attributes, and mask where necessary</li>
+                                <li>Load that data into AVRO files in hadoop</li>
+                                <li>Maintain the HIVE tables according to the metadata</li>
+                                <li>Deal with schema change in a nice way</li>
+                            </ul>
+                            <p>The challenge here was all of this had to be done without any code modification, so metadata was important.</p>
+                            <p>By the end of the project the team had delivered a generic engine that could be used for any customer and had an extensive automated test suite.  The test suite was necessary in this case because of the large number of people working on the project, and the different teams from different suppliers.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com">Large international investment bank</a>
@@ -401,7 +410,12 @@
                             <h2>Greenfield Migration Project</h2>
                             <hr class="star-primary">
                             <!--<img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">-->
-                            <p>xx</p>
+                            <p>Back in 2015 the government mandated that all its departments must move away from expensive proprietry software with ongoing maintenance charges.  Additionally they also wanted to move away from huge recurring consulting contracts.  There was a noted preference (albeit not mandated) to move to open source software.</p>
+                            <p>The task here was to migrate about 200 data warehouses out of Oracle, DB2 and Sybase all into a huge datalake in Hadoop.</p>
+                            <p>The architecture took an interesting approach. In some cases simply ingesting the source data was adequate, so an internal team handled that easy task.</p>
+                            <p>The more important projects required explicit exploitation and re-modelling. That task came to us, and is ongoing as of Q1 2016.</p>
+                            <p>Clearly security is very important with all the data in one place - so there is a lot of Kerberos, encryption and custom code in the BA server implementation here.</p>
+                            <p>Once all the data is loaded the analysis possible becomes limitless.  All of a sudden 360 degree customer view becomes easy as well as much more accurate reporting of business efficiency.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com">Major government organisation</a>
@@ -438,7 +452,12 @@
                             <h2>Community</h2>
                             <hr class="star-primary">
                             <!--<img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">-->
-                            <p>PLUG, PCM and Bloodwise</p>
+                            <p>The tech community in London is redhot right now with meetups for many different types of technology.  The Pentaho community is no different and has been having a huge european wide meetup since the creation of the product. 2015 saw this event hosted in London, with the organisation being shared between Code BI, Ubiquis and Bissol Consulting.  You can read about the event <a href="http://know-be-eye.blogspot.co.uk/2015/11/pcm2015-pentaho-community-meeting-of.html?view=timeslide" target="_blank">here.</a></p>
+
+                            <p>Code BI also organises and frequently sponsors the Pentaho London Usergroup (PLUG). This is a quarterly event typically held at skillsmatter. You can keep track of upcoming events, and see the content from previous ones <a href="http://www.meetup.com/Pentaho-London-User-Group/" target="_blank">here.</a>  Additionally if you join the skillsmatter group you can see previous skillscasts too.</p>
+
+                            <p>Finally Code BI has found that there is enormous value in donating time to help charities - and Bloodwise in particular. The story can be found <a href="https://dankeeley.wordpress.com/2014/06/04/community-charity-and-beating-blood-cancer/" target="_blank">here.</a>  What is particularly interesting about the setup at bloodwise is that they are very similar to a lot of SMEs - Using open source technology to keep costs down - and this is very effective.  The charity oriented system they use is also open source, and also has an active community.</p>
+
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
